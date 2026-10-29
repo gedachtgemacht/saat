@@ -6,6 +6,8 @@ saat. is a sowing calendar and garden planner for vegetable beds, raised beds an
 
 ![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue) ![PWA](https://img.shields.io/badge/PWA-installable-5a0fc8) ![Offline](https://img.shields.io/badge/offline-yes-2ea44f) ![No build step](https://img.shields.io/badge/build_step-none-lightgrey)
 
+**Try it:** https://gedachtgemacht.github.io/saat/ (works in any phone browser, install via "Add to Home Screen")
+
 The app interface is in German.
 
 You enter your two frost dates once: the last frost in spring and the first frost in autumn. From those, the app works out the windows for starting seeds indoors, sowing and planting out, for every plant. If you record what grows in your beds, you see the harvest window and a traffic light that shows whether the harvest will be done before the autumn frost.

@@ -1,85 +1,93 @@
 # saat.
 
-**Was muss ich jetzt säen?** saat. sagt es dir, passend zu deinem Frostdatum und deinen Beeten.
+**What should I sow right now?** saat. tells you, based on your frost dates and your beds.
 
-saat. ist ein Aussaatkalender für Gemüsebeet, Hochbeet und Balkonkasten. Du gibst einmal deine zwei Frostdaten ein, den letzten Frost im Frühjahr und den ersten im Herbst. Daraus rechnet die App für jede Pflanze die Zeitfenster zum Vorziehen, Säen und Pflanzen. Trägst du ein, was in deinen Beeten wächst, siehst du das Erntefenster und eine Ampel, ob die Ernte vor dem Herbstfrost fertig wird.
+saat. is a sowing calendar and garden planner for vegetable beds, raised beds and balcony boxes. It runs as an offline PWA on your phone, needs no account, and your garden data never leaves the device.
 
-Reine Rechnung, keine KI, kein Server. Alles bleibt auf deinem Handy.
+![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue) ![PWA](https://img.shields.io/badge/PWA-installable-5a0fc8) ![Offline](https://img.shields.io/badge/offline-yes-2ea44f) ![No build step](https://img.shields.io/badge/build_step-none-lightgrey)
 
-<p align="center"><img src="bilder/1-uebersicht.png" width="240" alt="saat. auf dem Handy: der Screen jetzt mit Frostdaten, Aufgaben und Navigation unten"></p>
+The app interface is in German.
 
-<p align="center"><img src="bilder/2-breit.png" width="640" alt="saat. am großen Bildschirm: Navigation links, jetzt in zwei Spalten"></p>
+You enter your two frost dates once: the last frost in spring and the first frost in autumn. From those, the app works out the windows for starting seeds indoors, sowing and planting out, for every plant. If you record what grows in your beds, you see the harvest window and a traffic light that shows whether the harvest will be done before the autumn frost.
 
-## Warum
+Plain arithmetic, no AI, no server. Everything stays on your phone.
 
-Gartenplaner gibt es viele, die guten meist im Abo. Bezahlt wird dort vor allem für eine einzige Frage: Was ist jetzt dran, und wann kann ich ernten? Dafür brauchst du ein Konto, deine Daten liegen beim Anbieter, und die Apps sind voll mit Community, Fotos und Shop. Die Termine kommen als feste Tage, obwohl Gärtnern nie auf den Tag genau geht.
+<p align="center"><img src="bilder/1-uebersicht.png" width="240" alt="saat. on a phone: the now screen with frost dates, upcoming tasks and navigation at the bottom"></p>
 
-saat. macht nur den Kalender. Ohne Konto, ohne Netz, und jeder Termin ist ein ehrliches Zeitfenster.
+<p align="center"><img src="bilder/2-breit.png" width="640" alt="saat. on a large screen: navigation on the left, the now screen in two columns"></p>
 
-## Funktionen
+## Why
 
-- **Frostdaten**: letzter Frost im Frühjahr und erster Frost im Herbst, als Tag und Monat, gelten für jedes Jahr. Die Vorbelegung 10.05. und 15.10. ist als Platzhalter markiert
-- **Pflanzenliste** mit 14 Richtwerten zum Start (Tomate, Paprika, Gurke, Zucchini, Kürbis, Buschbohne, Erbse, Möhre, Radieschen, Pflücksalat, Spinat, Kohlrabi, Steckzwiebel, Mangold), alles bearbeitbar, dazu eigene Pflanzen
-- **Zeitfenster** pro Pflanze für Vorziehen, Direktsaat und Auspflanzen in Wochen relativ zum letzten Frost, dazu die Kulturdauer als Spanne in Tagen
-- **Beete** mit Name und Notiz, darin deine Kulturen: Pflanze, Art (vorgezogen und gepflanzt oder direkt gesät) und Datum
-- **Erntefenster** pro Kultur als Spanne, mit Vorschau schon vor dem Speichern
-- **Ampel** gegen den Herbstfrost: passt, knapp, zu spät
-- **jetzt**: was in den nächsten 14 Tagen ansteht, ob das Fenster schon läuft oder in wie vielen Tagen es aufgeht, dazu alle offenen Erntefenster samt Beet
-- **Jahreskalender**: pro Pflanze Balken für Vorziehen, Säen und Pflanzen über zwölf Monate, mit Markierung für heute und beide Frostdaten. Vergangene Fenster werden grau
-- **Export und Import** als JSON Datei, mit Vorschau vor dem Ersetzen
-- **Beispieldaten** zum Ausprobieren, als Beispiel markiert und mit einem Klick entfernt
-- Hell und dunkel, funktioniert offline, installierbar als App
+There are plenty of garden planners, and the good ones are usually subscription apps. What you mostly pay for is one question: what needs doing now, and when can I harvest? For that you need an account, your data sits with the provider, and the apps are full of community feeds, photos and a shop. Dates come as fixed days, even though gardening never works to the exact day.
 
-## Datenschutz
+saat. only does the calendar. No account, no network, and every date is an honest time window.
 
-Nichts verlässt dein Gerät. saat. hat keinen Server, kein Konto, keine Analyse, keine Werbung und lädt nichts aus dem Netz nach. Frostdaten, Pflanzen, Beete und Kulturen liegen nur im lokalen Speicher deines Browsers (localStorage). Eine Exportdatei entsteht nur, wenn du sie selbst auslöst.
+## Features
 
-Weil die Daten nur im Browser liegen: Wer die Websitedaten löscht, löscht auch saat. Exportiere deshalb ab und zu, das Datum des letzten Exports steht in den Einstellungen.
+- **Frost dates**: last frost in spring and first frost in autumn, as day and month, valid for every year. The defaults 10 May and 15 October are marked as placeholders
+- **Plant list** with 14 starting reference values (tomato, pepper, cucumber, zucchini, pumpkin, bush bean, pea, carrot, radish, cut-and-come-again lettuce, spinach, kohlrabi, onion sets, chard), all editable, plus your own plants
+- **Time windows** per plant for starting indoors, direct sowing and planting out, in weeks relative to the last frost, plus the growing time as a range in days
+- **Beds** with name and note, holding your crops: plant, method (started indoors and planted out, or sown directly) and date
+- **Harvest window** per crop as a range, previewed before you save
+- **Traffic light** against the autumn frost: **passt** ("fits"), **knapp** ("tight"), **zu spät** ("too late")
+- **jetzt** ("now"): what is due in the next 14 days, whether the window is already open or in how many days it opens, plus all open harvest windows with their bed
+- **Year calendar**: bars per plant for starting indoors, sowing and planting out across twelve months, with markers for today and both frost dates. Past windows turn grey
+- **Export and import** as a JSON file, with a preview before replacing
+- **Example data** to try things out, marked as an example and removed with one click
+- Light and dark theme, works offline, installable as an app
 
-## Installation
+## Privacy
 
-saat. ist eine statische Web-App. Es gibt keinen Build-Schritt und keine Abhängigkeiten.
+Nothing leaves your device. saat. has no server, no account, no analytics, no ads, and loads nothing from the network. Frost dates, plants, beds and crops are kept only in your browser's local storage (localStorage). An export file is only created when you trigger it yourself.
 
-1. Den Ordner `saat/` auf einen beliebigen statischen Host legen, zum Beispiel deinen eigenen Webspace. Für die Installation als App ist HTTPS nötig.
-2. Die Adresse im Handybrowser öffnen.
-3. Im Browsermenü **Zum Startbildschirm hinzufügen** wählen. Danach startet saat. wie eine App und funktioniert auch ohne Netz, auch mitten im Garten.
+Because the data lives only in the browser: if you clear the site data, you also delete saat. So export now and then. The date of your last export is shown in the settings.
 
-Lokal testen:
+## Install
+
+saat. is a static web app. There is no build step and there are no dependencies.
+
+1. Put the `saat/` folder on any static host, for example your own web space. Installing it as an app requires HTTPS.
+2. Open the address in your phone's browser.
+3. In the browser menu choose **Add to Home Screen**. After that saat. starts like an app and also works without a connection, even in the middle of the garden.
+
+Test locally:
 
 ```
 cd saat
 python3 -m http.server 8000
 ```
 
-Dann `http://localhost:8000` im Browser öffnen.
+Then open `http://localhost:8000` in your browser.
 
-## Wie gerechnet wird
+## How the math works
 
-Alle Daten sind reine Kalendertage. Gerechnet wird über `Date.UTC`, damit die Zeitumstellung keinen Tag verschiebt.
+All dates are plain calendar days. Calculations use `Date.UTC`, so daylight saving time never shifts a day.
 
-**1. Zeitfenster.** Jedes Fenster steht in Wochen relativ zum letzten Frühjahrsfrost, minus heißt davor. Beginn = Frostdatum + 7 × von, Ende = Frostdatum + 7 × bis.
-Beispiel Tomate vorziehen, -8 bis -6 Wochen, Frost am 10.05.2026: 10.05. minus 56 Tage ergibt 15.03., minus 42 Tage ergibt 29.03. Auspflanzen 0 bis 3 Wochen: 10.05. bis 31.05.
+**1. Time windows.** Each window is given in weeks relative to the last spring frost; minus means before. Start = frost date + 7 × from, end = frost date + 7 × to.
+Example: start tomatoes indoors, -8 to -6 weeks, frost on 10 May 2026: 10 May minus 56 days gives 15 March, minus 42 days gives 29 March. Planting out 0 to 3 weeks: 10 May to 31 May.
 
-**2. Erntefenster.** Datum der Direktsaat oder Auspflanzung plus Kulturdauer, kürzeste bis längste.
-Beispiel Tomate gepflanzt am 20.05.2026, Kultur 60 bis 85 Tage: Ernte 19.07. bis 13.08.
+**2. Harvest window.** Date of direct sowing or planting out plus growing time, shortest to longest.
+Example: tomato planted out on 20 May 2026, growing time 60 to 85 days: harvest 19 July to 13 August.
 
-**3. Ampel.** Gilt nur für frostempfindliche Pflanzen, alle anderen bekommen immer passt. Verglichen wird mit dem ersten Herbstfrost im Jahr der Kultur:
-- zu spät, wenn die Ernte erst nach dem Herbstfrost beginnt
-- knapp, wenn sie nach dem Herbstfrost endet
-- sonst passt. Endet die Ernte genau am Frosttag, passt es noch
+**3. Traffic light.** Only applies to frost-sensitive plants; all others always get **passt** ("fits"). The comparison is with the first autumn frost in the year of the crop:
+- **zu spät** ("too late") if the harvest only starts after the autumn frost
+- **knapp** ("tight") if it ends after the autumn frost
+- otherwise **passt**. If the harvest ends exactly on the frost day, it still fits
 
-Beispiel Buschbohne, Kultur 60 bis 75 Tage, Herbstfrost 15.10.2026: Saat am 20.08. ergibt Ernte 19.10. bis 03.11., zu spät. Saat am 05.08. ergibt 04.10. bis 19.10., knapp.
+Example: bush bean, growing time 60 to 75 days, autumn frost 15 October 2026: sowing on 20 August gives a harvest from 19 October to 3 November, too late. Sowing on 5 August gives 4 October to 19 October, tight.
 
-**4. Was ansteht.** Auf dem Screen jetzt erscheinen alle Fenster, die in den nächsten 14 Tagen beginnen oder schon laufen und heute noch nicht vorbei sind, sortiert nach Beginn. Dazu alle Kulturen, deren Erntefenster in diesem Zeitraum offen ist.
+**4. What is due.** The **jetzt** ("now") screen shows all windows that start within the next 14 days or are already open and not over today, sorted by start. Plus all crops whose harvest window is open in that period.
 
-**Grenzen.** Die Kulturdauer ist vereinfacht: Sie zählt ab Saat oder Pflanzung und kennt weder Sorten noch Temperatur. Die Startliste sind Richtwerte aus Nachschlagewerken, keine Garantie. Boden, Lage und Wetter verschieben alles um Tage bis Wochen. Deshalb zeigt saat. jeden Termin als Spanne, nie als einzelnen Tag.
+**Limits.** Growing time is simplified: it counts from sowing or planting and knows neither varieties nor temperature. The starting list consists of reference values from gardening references, not guarantees. Soil, location and weather shift everything by days to weeks. That is why saat. shows every date as a range, never as a single day.
 
-Die Rechenfunktionen in `rechnen.js` sind reine Funktionen und mit `node test-calc.js` gegen diese Handrechnungen getestet.
+The calculation functions in `rechnen.js` are pure functions and are tested against these hand calculations with `node test-calc.js`.
 
-## Lizenz
+## License
 
-GNU Affero General Public License v3.0 (AGPL-3.0), siehe `LICENSE`.
+GNU Affero General Public License v3.0 (AGPL-3.0), see `LICENSE`.
+
+**Deutsch:** saat. ist ein Aussaatkalender und Gartenplaner für Gemüsebeet, Hochbeet und Balkon, der aus deinen Frostdaten Termine zum Vorziehen, Säen, Pflanzen und Ernten berechnet, offline als PWA und ohne Konto.
 
 ---
 
-**gedacht.gemacht.** Kleine, ehrliche Software. Alles bleibt auf deinem Gerät.
+**gedacht.gemacht.** Small, honest software. Everything stays on your device. · [More projects](https://github.com/gedachtgemacht)
